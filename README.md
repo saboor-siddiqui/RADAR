@@ -1,4 +1,4 @@
-# RADAR — Graph-based Review Agent for Code Evaluation
+# RADAR — Review Agent for Diffs, Analysis & Reporting
 
 RADAR is a production-quality, LangGraph-powered agent that automatically reviews GitHub Pull Requests. It fetches the PR diff, runs two parallel AI analysis passes (general code quality + SQL/Airflow DAG-specific), presents a structured review, pauses for your approval, and — if you say yes — posts the review directly back to GitHub.
 
@@ -269,4 +269,3 @@ Post this review to GitHub? [y/N]: y
 - ✅ No LLM calls in `generate_review`
 - ✅ No global variables — all state flows through `PRReviewState`
 - ✅ `human_gate` interrupt is mandatory and never skipped
-# RADAR
